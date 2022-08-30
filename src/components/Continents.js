@@ -1,17 +1,14 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { BsFillArrowRightSquareFill } from 'react-icons/bs';
-import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import continents from '../data/data';
 import { getCountries } from '../redux/countries/countries';
 // import '../styles/continents.scss';
 
 const Continents = () => {
-  const { idName } = useParams();
   const dispatch = useDispatch();
-  const countriesOfContinent = useSelector((state) => state.countries);
-  console.log('fdfd', countriesOfContinent);
   const handleClick = (name) => {
-    dispatch(getCountries(name, idName));
+    dispatch(getCountries(name));
   };
 
   return (
@@ -21,9 +18,11 @@ const Continents = () => {
           <li key={id}>
             {name}
             <img src={image} alt="awesome" />
-            <button type="button" onClick={() => handleClick(name)}>
-              <BsFillArrowRightSquareFill />
-            </button>
+            <Link to={`/${name}`}>
+              <button type="button" onClick={() => handleClick(name)}>
+                <BsFillArrowRightSquareFill />
+              </button>
+            </Link>
           </li>
         ))}
       </ul>
