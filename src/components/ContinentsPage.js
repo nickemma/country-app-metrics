@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchCountries } from '../redux/countries/countries';
+import { useDispatch } from 'react-redux';
+import { getCountries } from '../redux/countries/countries';
 import Continents from './Continents';
 
 const ContinentsPage = () => {
-  const countries = useSelector((state) => state.countries);
   const dispatch = useDispatch();
-  console.log('sfdsfesd', countries);
   useEffect(() => {
-    dispatch(fetchCountries());
+    dispatch(getCountries());
   }, []);
 
   return (

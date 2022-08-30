@@ -20,7 +20,7 @@ description coming soon
 
 ## Getting Started
 
-- Clone this repo <https://github.com/NickEmma/sport-standing>
+- Clone this repo <https://github.com/NickEmma/country-app-metrics>
 
   ```bash
   git clone https://github.com/NickEmma/space-hub
