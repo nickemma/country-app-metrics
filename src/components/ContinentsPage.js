@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchCountries } from '../redux/countries/countries';
+import { getCountries } from '../redux/countries/countries';
 import Continents from './Continents';
 
 const ContinentsPage = () => {
@@ -8,7 +8,7 @@ const ContinentsPage = () => {
   const dispatch = useDispatch();
   console.log('sfdsfesd', countries);
   useEffect(() => {
-    dispatch(fetchCountries());
+    dispatch(getCountries());
   }, []);
 
   return (
