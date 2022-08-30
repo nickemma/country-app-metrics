@@ -27,15 +27,15 @@ const continents = [
   },
   {
     id: uuidv4(),
-    name: 'North America',
+    name: 'Americas',
     map: '',
-    image: '/images/north america.svg',
+    image: '/images/south america.svg',
   },
   {
     id: uuidv4(),
-    name: 'South America',
+    name: 'North Americas',
     map: '',
-    image: '/images/south america.svg',
+    image: '/images/north america.svg',
   },
   {
     id: uuidv4(),
