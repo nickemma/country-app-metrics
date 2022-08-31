@@ -27,6 +27,6 @@ export const fetchCountryDetails = createAsyncThunk(
   async (name) => {
     const response = await axios.get(api);
     return response.data.filter((country) => country.name.common === name);
-  }
+  },
 );
 export default countryReducer;
