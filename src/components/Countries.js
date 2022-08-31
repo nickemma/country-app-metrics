@@ -14,7 +14,7 @@ const Countries = () => {
       {countries.map((country) => (
         <div key={country?.name.common}>
           <h1>{country?.name.common}</h1>
-          <img src={country?.flags.svg} alt="flag" />
+          {/* <img src={country?.flags.svg} alt="flag" /> */}
           <p>{country?.capital}</p>
           <p>{country?.subregion}</p>
           <button type="button">
