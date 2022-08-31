@@ -10,8 +10,8 @@ const countryReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'GET_COUNTRIES/fulfilled':
       return action.payload;
-    case 'FETCH_COUNTRY/fulfilled':
-      return action.payload;
+    case 'FETCH_COUNTRY':
+      return state.filter((country) => country.name.common === action.payload);
     default:
       return state;
   }
@@ -22,11 +22,8 @@ export const getCountries = createAsyncThunk(GET_COUNTRIES, async (name) => {
   return response.data.filter((country) => country.region === name);
 });
 
-export const fetchCountryDetails = createAsyncThunk(
-  FETCH_COUNTRY,
-  async (name) => {
-    const response = await axios.get(api);
-    return response.data.filter((country) => country.name.common === name);
-  },
-);
+export const fetchCountryDetails = (name) => {
+  return { type: FETCH_COUNTRY, payload: name };
+};
+
 export default countryReducer;

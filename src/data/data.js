@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-const continents = [
+const continentsData = [
   {
     id: uuidv4(),
     name: 'Africa',
@@ -45,4 +45,4 @@ const continents = [
   },
 ];
 
-export default continents;
+export default continentsData;

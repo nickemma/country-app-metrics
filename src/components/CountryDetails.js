@@ -1,13 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-// import { fetchCountryDetails } from '../redux/countries/countries';
 
 const CountryDetails = () => {
   const { countries } = useSelector((state) => state);
-  // console.log(country);
-  // useEffect(() => {
-  //   fetchCountryDetails();
-  // }, []);
+  console.log(countries);
   return (
     <div>
       {countries.map((country) => (
