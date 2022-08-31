@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
-import { BsFillArrowRightSquareFill } from 'react-icons/bs';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import continents from '../data/data';
+import continentsData from '../data/data';
 import { getCountries } from '../redux/countries/countries';
 // import '../styles/continents.scss';
 
@@ -14,13 +14,13 @@ const Continents = () => {
   return (
     <div>
       <ul className="continents">
-        {continents.map(({ id, name, image }) => (
+        {continentsData.map(({ id, name, image }) => (
           <li key={id}>
             {name}
             <img src={image} alt="awesome" />
             <Link to={`/${name}`}>
               <button type="button" onClick={() => handleClick(name)}>
-                <BsFillArrowRightSquareFill />
+                <BsFillArrowRightCircleFill />
               </button>
             </Link>
           </li>

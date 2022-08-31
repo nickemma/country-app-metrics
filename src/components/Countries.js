@@ -1,23 +1,37 @@
-import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { getCountries } from '../redux/countries/countries';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
+import { fetchCountryDetails } from '../redux/countries/countries';
 
 const Countries = () => {
   const countries = useSelector((state) => state.countries);
-  useEffect(() => {
-    getCountries();
-  }, []);
+  const dispatch = useDispatch();
+  const handleClick = (name) => {
+    dispatch(fetchCountryDetails(name));
+  };
 
   return (
     <>
-      {countries.map((country) => (
-        <div key={country?.name.common}>
-          <h1>{country?.name.common}</h1>
-          <img src={country?.flags.png} alt="flag" />
-          <p>{country?.capital}</p>
-          <p>{country?.subregion}</p>
-        </div>
-      ))}
+      <section className="countries">
+        {countries.map((country) => (
+          <li key={country?.name.common}>
+            <h1>{country?.name.common}</h1>
+            <Link to={`/:/${country?.name.common}`}>
+              <button
+                type="button"
+                onClick={() => handleClick(country?.name.common)}
+              >
+                <BsFillArrowRightCircleFill />
+              </button>
+            </Link>
+            <img src={country?.flags.png} alt="flag" />
+            <p>{country?.capital}</p>
+            <p>{country?.subregion}</p>
+            <p>{country?.population}</p>
+          </li>
+        ))}
+      </section>
     </>
   );
 };

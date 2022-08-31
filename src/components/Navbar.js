@@ -1,9 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { FaMicrophone } from 'react-icons/fa';
+import { AiTwotoneSetting } from 'react-icons/ai';
+import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 
 const Navbar = () => (
-  <div>
-    <Link to="/">ContinentsPage</Link>
+  <div className="nav">
+    <BsFillArrowLeftCircleFill />
+    <NavLink to="/">CountriesPage</NavLink>
+    <div>
+      <FaMicrophone />
+      <AiTwotoneSetting />
+    </div>
   </div>
 );
 

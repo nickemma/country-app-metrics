@@ -1,6 +1,6 @@
 # Project Name
 
-premier league standing
+country App Metrics
 
 # Description the project.
 
@@ -23,13 +23,13 @@ description coming soon
 - Clone this repo <https://github.com/NickEmma/country-app-metrics>
 
   ```bash
-  git clone https://github.com/NickEmma/space-hub
+  git clone https://github.com/NickEmma/country-app-metrics
   ```
 
-- Navigate to SpaceTravelers folder/directory
+- Navigate to country-app-metrics folder/directory
 
   ```bash
-  cd Sport-standing
+  cd country-app-metrics
   ```
 
 - On the command line, at the project's root, run `npm install` to install app dependencies

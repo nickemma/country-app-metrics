@@ -11,8 +11,11 @@ const ContinentsPage = () => {
 
   return (
     <>
-      <div>
-        <img src="/images/world.svg" alt="cool" />
+      <div className="world_map">
+        <img src="/images/world.svg" alt="world awesome" />
+        <div className="stats">
+          <p>STATS BY CONTINENTS</p>
+        </div>
       </div>
       <Continents />
     </>
