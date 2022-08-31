@@ -1,7 +1,5 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap');
 
-img {
-  width: 100%;
+:root {
+  bg-color: red;
 }
