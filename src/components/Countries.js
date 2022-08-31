@@ -23,7 +23,7 @@ const Countries = () => {
         {countries.map((country) => (
           <li key={country?.name.common}>
             <h1>{country?.name.common}</h1>
-            <Link to={`/:/${country?.name.common}`}>
+            <Link to={`/${country?.name.common}`}>
               <button
                 type="button"
                 onClick={() => handleClick(country?.name.common)}
