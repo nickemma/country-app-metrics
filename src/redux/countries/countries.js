@@ -22,8 +22,6 @@ export const getCountries = createAsyncThunk(GET_COUNTRIES, async (name) => {
   return response.data.filter((country) => country.region === name);
 });
 
-export const fetchCountryDetails = (name) => {
-  return { type: FETCH_COUNTRY, payload: name };
-};
+export const fetchCountryDetails = (name) => ({ type: FETCH_COUNTRY, payload: name });
 
 export default countryReducer;

@@ -13,13 +13,6 @@ const Countries = () => {
 
   return (
     <>
-      <div>
-        <img
-          src={`../../public/images/${countries[0].continents[0]}.svg`}
-          alt="awesome"
-        />
-        <h1>{countries[0].continents[0]}</h1>
-      </div>
       <section className="countries">
         {countries.map((country) => (
           <li key={country?.name.common}>

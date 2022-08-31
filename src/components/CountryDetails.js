@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 
 const CountryDetails = () => {
   const { countries } = useSelector((state) => state);
-  console.log(countries);
   return (
     <div>
       {countries.map((country) => (
