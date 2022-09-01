@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import api from '../api';
@@ -19,9 +21,14 @@ const countryReducer = (state = initialState, action) => {
 
 export const getCountries = createAsyncThunk(GET_COUNTRIES, async (name) => {
   const response = await axios.get(api);
-  return response.data.filter((country) => country.region === name);
+  return response.data.filter((country) =>
+    country.region === name ? country : country.subregion === name
+  );
 });
 
-export const fetchCountryDetails = (name) => ({ type: FETCH_COUNTRY, payload: name });
+export const fetchCountryDetails = (name) => ({
+  type: FETCH_COUNTRY,
+  payload: name,
+});
 
 export default countryReducer;
