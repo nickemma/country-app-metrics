@@ -8,11 +8,10 @@ import '../styles/CountryDetail.scss';
 const CountryDetails = () => {
   const { countries } = useSelector((state) => state);
   return (
-    <div>
+    <div className="details">
       {countries.map((country) => (
         <li key={country?.name.common}>
-          <h1>{country?.name.common}</h1>
-          <div className="map-wrapper">
+          <div className="map">
             <MapContainer
               center={{ lat: country?.latlng[0], lng: country?.latlng[1] }}
               zoom={6}
@@ -33,15 +32,6 @@ const CountryDetails = () => {
               </Marker>
             </MapContainer>
           </div>
-          <p>
-            The Capital of
-            {' '}
-            {country?.name.common}
-            {' '}
-            is
-            {' '}
-            <strong>{country?.capital}</strong>
-          </p>
         </li>
       ))}
     </div>
