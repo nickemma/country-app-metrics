@@ -1,6 +1,6 @@
 # Project Name
 
-country App Metrics
+COUNTRY APP METRICS
 
 # Description the project.
 
