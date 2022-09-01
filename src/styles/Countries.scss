@@ -28,11 +28,13 @@
           color: var(--text-color);
         }
       }
+
       img {
         height: 50%;
         width: 100%;
         object-fit: contain;
       }
+
       &:hover {
         transform: scale(1.1);
       }
