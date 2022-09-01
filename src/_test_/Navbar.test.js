@@ -12,7 +12,7 @@ describe('Test if navBar renders correctly', () => {
         <BrowserRouter>
           <Navbar />
         </BrowserRouter>
-      </Provider>
+      </Provider>,
     );
     expect(Tree).toMatchSnapshot();
   });
