@@ -32,6 +32,26 @@ const CountryDetails = () => {
               </Marker>
             </MapContainer>
           </div>
+          <div className="item">
+            <p>TimesZones:</p>
+            <p>
+              <strong>{country?.timezones}</strong>
+            </p>
+          </div>
+          <div className="item">
+            <p>The Official name: </p>
+            <p>
+              <strong>{country?.name.official}</strong>
+            </p>
+          </div>
+          <div className="item">
+            <p>The languages they speak are:</p>
+            <p>{Object.values(country?.languages)}</p>
+          </div>
+          <div className="item">
+            <p>Coat Of Arms</p>
+            <img src={country?.coatOfArms.svg} alt="awesome coat 0f arm" />
+          </div>
         </li>
       ))}
     </div>

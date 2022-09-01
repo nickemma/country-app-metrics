@@ -36,8 +36,8 @@ const Countries = () => {
                 <p>{country?.subregion}</p>
               </div>
               <div className="item">
-                <p>TimeZone:</p>
-                <p>{country?.timezones}</p>
+                <p>Populations:</p>
+                <p>{country?.population}</p>
               </div>
             </li>
           ))}
