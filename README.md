@@ -4,7 +4,11 @@ country App Metrics
 
 # Description the project.
 
-description coming soon
+The Country-stats is a a React, Redux application based on the Countries details.
+
+In this application i am fetching the data and returned the data from the API in the Redux store.
+
+This web application is build with react and provides statistical insights on Countries around the world and there continents. The application allows users to filter through the information by different continents and countries..
 
 ## Built With
 
@@ -12,7 +16,7 @@ description coming soon
 - Redux
 - SCSS
 - Testing
-- API
+- Restful API
 
 ## Click here for live version
 
@@ -55,7 +59,7 @@ description coming soon
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-thanks: [issue-link](https://github.com/NickEmma/sport-standing/issues)
+thanks: [issue-link](https://github.com/NickEmma/country-app-metrics/issues)
 
 ## Show your support
 
