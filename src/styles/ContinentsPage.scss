@@ -1,0 +1,39 @@
+.world-map {
+  padding-top: 7rem;
+
+  .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    img {
+      cursor: pointer;
+      margin-bottom: 10px;
+      width: 60%;
+    }
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+
+  .stats {
+    h3 {
+      background: var(--primary-color);
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--text-color);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .stats {
+    h3 {
+      text-align: center;
+    }
+  }
+}

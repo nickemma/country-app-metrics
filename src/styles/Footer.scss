@@ -1,0 +1,11 @@
+.credit {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9);
+  font-size: 2rem;
+
+  span {
+    color: var(--primary-color);
+    font-weight: 700;
+  }
+}

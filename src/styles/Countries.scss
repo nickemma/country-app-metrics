@@ -1,0 +1,64 @@
+.countries {
+  padding-top: 5rem;
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 2rem;
+
+    li {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+
+      .list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        h2 {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        a {
+          font-size: 2rem;
+          color: var(--text-color);
+        }
+      }
+
+      img {
+        height: 50%;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .item {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+
+        p {
+          font-size: 15px;
+        }
+      }
+
+      .item:nth-child(even) {
+        border-radius: 0.5rem;
+      }
+
+      .item:nth-child(odd) {
+        background: var(--primary-color);
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
