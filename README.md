@@ -22,6 +22,10 @@ This web application is build with react and provides statistical insights on Co
 
 - live demo: [Live Link](https://country-metrics.netlify.app/)
 
+### Click here for Video Link
+
+- [Video link](https://www.loom.com/share/667175bde76943deb269b06e593649be)
+
 ## Getting Started
 
 - Clone this repo <https://github.com/NickEmma/country-app-metrics>
