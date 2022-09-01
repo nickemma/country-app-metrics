@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import '../styles/CountryDetail.scss';
 
 const CountryDetails = () => {
   const { countries } = useSelector((state) => state);

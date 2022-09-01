@@ -4,7 +4,6 @@
   --bg-color: rgb(251, 81, 147);
   --primary-color: rgb(205, 64, 117);
   --text-color: #fff;
-  --img-color: rgb(174, 57, 101);
 }
 
 * {
@@ -16,6 +15,7 @@
   border: none;
   outline: none;
   font-family: 'Lato', sans-serif;
+  list-style: none;
   transition: all 0.3s linear;
 }
 
@@ -37,4 +37,8 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+section {
+  padding: 2rem 6rem;
 }

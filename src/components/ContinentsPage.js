@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getCountries } from '../redux/countries/countries';
 import Continents from './Continents';
+import '../styles/ContinentsPage.scss';
 
 const ContinentsPage = () => {
   const dispatch = useDispatch();
@@ -11,10 +12,13 @@ const ContinentsPage = () => {
 
   return (
     <>
-      <div className="world_map">
-        <img src="/images/world.svg" alt="world awesome" />
+      <div className="world-map">
+        <div className="stat">
+          <img src="/images/world.svg" alt="world awesome" />
+          <h2>THE WORLD</h2>
+        </div>
         <div className="stats">
-          <p>STATS BY CONTINENTS</p>
+          <h3>STATS BY CONTINENTS</h3>
         </div>
       </div>
       <Continents />

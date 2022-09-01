@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { fetchCountryDetails } from '../redux/countries/countries';
+import '../styles/Countries.scss';
 
 const Countries = () => {
   const countries = useSelector((state) => state.countries);
@@ -14,23 +15,33 @@ const Countries = () => {
   return (
     <>
       <section className="countries">
-        {countries.map((country) => (
-          <li key={country?.name.common}>
-            <h1>{country?.name.common}</h1>
-            <Link to={`/:/${country?.name.common}`}>
-              <button
-                type="button"
-                onClick={() => handleClick(country?.name.common)}
-              >
-                <BsFillArrowRightCircleFill />
-              </button>
-            </Link>
-            <img src={country?.flags.png} alt="flag" />
-            <p>{country?.capital}</p>
-            <p>{country?.subregion}</p>
-            <p>{country?.population}</p>
-          </li>
-        ))}
+        <ul className="row">
+          {countries.map((country) => (
+            <li key={country?.name.common}>
+              <div className="list">
+                <h2>{country?.name.common}</h2>
+                <Link to={`/:/${country?.name.common}`}>
+                  <BsFillArrowRightCircleFill
+                    onClick={() => handleClick(country?.name.common)}
+                  />
+                </Link>
+              </div>
+              <img src={country?.flags.png} alt="flag" />
+              <div className="item">
+                <p>Capital:</p>
+                <p>{country?.capital}</p>
+              </div>
+              <div className="item">
+                <p>SubRegion:</p>
+                <p>{country?.subregion}</p>
+              </div>
+              <div className="item">
+                <p>TimeZone:</p>
+                <p>{country?.timezones}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );
