@@ -1,0 +1,25 @@
+.leaflet-container {
+  width: 80vw;
+  height: 75vh;
+  border-radius: 0.5rem;
+}
+
+.details {
+  padding-top: 3rem;
+
+  .map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+// ========= Mobile view ===========
+@media (max-width: 600px) {
+  .leaflet-container {
+    width: 90vw;
+    height: 70vh;
+    border-radius: 0.5rem;
+  }
+}

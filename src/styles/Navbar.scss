@@ -1,3 +1,50 @@
-nav {
+.nav {
+  position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 7%;
+  z-index: 999;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+
+    a {
+      animation: floating 2s linear infinite;
+      font-size: 3rem;
+      color: var(--text-color);
+
+      @keyframes floating {
+        0% {
+          transform: translateY(0);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-1rem);
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .nav-right {
+    svg {
+      font-size: 2.5rem;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
 }

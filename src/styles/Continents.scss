@@ -1,0 +1,58 @@
+.continents {
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 2rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        margin-top: 30px;
+      }
+
+      a {
+        font-size: 2rem;
+        color: var(--text-color);
+        font-weight: 600;
+        animation: floating 2s linear infinite;
+
+        @keyframes floating {
+          0% {
+            transform: translateY(0);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-1rem);
+          }
+        }
+      }
+    }
+
+    li:nth-child(even) {
+      border-radius: 0.5rem;
+      padding: 5rem;
+      margin: 10px;
+    }
+
+    li:nth-child(odd) {
+      background: var(--primary-color);
+      border-radius: 0.5rem;
+      padding: 5rem;
+      margin: 10px;
+    }
+  }
+}
