@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import {
+  MapContainer, TileLayer, Marker, Popup,
+} from 'react-leaflet';
 import '../styles/CountryDetail.scss';
 
 const CountryDetails = () => {
