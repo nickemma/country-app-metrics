@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { fetchCountryDetails } from '../redux/countries/countries';
+import SkeletonLoader from '../components/Loader';
 import '../styles/Countries.scss';
 
 const Countries = () => {
@@ -11,7 +12,9 @@ const Countries = () => {
   const handleClick = (name) => {
     dispatch(fetchCountryDetails(name));
   };
-
+  if (countries.length === 0) {
+    return <SkeletonLoader />;
+  }
   return (
     <>
       <section className="countries">
