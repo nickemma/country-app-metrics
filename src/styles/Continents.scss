@@ -56,3 +56,11 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .continents {
+    .items {
+      grid-template-columns: 1fr;
+    }
+  }
+}

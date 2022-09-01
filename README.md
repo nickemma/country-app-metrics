@@ -1,6 +1,6 @@
 # Project Name
 
-country App Metrics
+COUNTRY APP METRICS
 
 # Description the project.
 
@@ -20,7 +20,7 @@ This web application is build with react and provides statistical insights on Co
 
 ## Click here for live version
 
-- live demo: [coming soon]()
+- live demo: [Live Link](https://country-metrics.netlify.app/)
 
 ## Getting Started
 
