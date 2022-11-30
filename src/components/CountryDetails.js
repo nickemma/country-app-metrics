@@ -1,8 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import {
-  MapContainer, TileLayer, Marker, Popup,
-} from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import '../styles/CountryDetail.scss';
 
 const CountryDetails = () => {
@@ -60,13 +58,3 @@ const CountryDetails = () => {
 };
 
 export default CountryDetails;
-
-//  <div>
-//    {countries.map((country) => (
-//      <li key={country?.name.common}>
-//        <h1>{country?.name.common}</h1>
-//        <p>{country?.capital}</p>
-//        <p>{country?.subregion}</p>
-//      </li>
-//    ))}
-//  </div>;
