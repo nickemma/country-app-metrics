@@ -1,58 +1,95 @@
-# Project Name
+# 📗 Table of Contents
 
-COUNTRY APP METRICS
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Exotic Rentals ](#-exotic-rentals--)
+  - [Backend](#backend)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-# Description the project.
+# 📖 COUNTRY APP METRICS <a name="about-project"></a>
 
-The Country-stats is a a React, Redux application based on the Countries details.
+**COUNTRY APP METRICS** This web application is build with react and provides statistical insights on Countries around the world and there continents. The application allows users to filter through the information by different continents and countries.
+## 🛠 Built With <a name="built-with"></a>
 
-In this application i am fetching the data and returned the data from the API in the Redux store.
+### Tech Stack <a name="tech-stack"></a>
 
-This web application is build with react and provides statistical insights on Countries around the world and there continents. The application allows users to filter through the information by different continents and countries..
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.org/">Redux</a></li>
+    <li><a href="#">SCSS</a></li>
+    <li><a href="#">Unit Testing</a></li>
+    <li><a href="#">Restful API</a></li>
+  </ul>
+</details>
 
-## Built With
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- React js
-- Redux
-- SCSS
-- Testing
-- Restful API
+- [Live Demo Link](https://country-metrics.netlify.app/)
 
-## Click here for live version
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- live demo: [Live Link](https://country-metrics.netlify.app/)
+## 💻 Getting Started <a name="getting-started"></a>
 
-### Click here for Video Link
+To get a local copy up and running, follow these steps.
 
-- [Video link](https://www.loom.com/share/667175bde76943deb269b06e593649be)
+### Prerequisites
 
-## Getting Started
+In order to run this project you need:
 
-- Clone this repo <https://github.com/NickEmma/country-app-metrics>
+### Setup
 
-  ```bash
-  git clone https://github.com/NickEmma/country-app-metrics
-  ```
+Clone this repository to your desired folder:
 
-- Navigate to country-app-metrics folder/directory
+```sh
+  cd my-folder
+  git clone git@github.com:NickEmma/country-app-metrics.git
+```
 
-  ```bash
+### Install
+
+Install this project with:
+
+```sh
   cd country-app-metrics
-  ```
+  npm install
+```
 
-- On the command line, at the project's root, run `npm install` to install app dependencies
+### Usage
 
-- Next, run `npm start` which will run the app in the development mode.
+To run the project, execute the following command:
 
-- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+  npm start
+```
 
-- ALTERNATIVELY
+### Deployment
 
-  - Just run `npm run build` which will build the project and generate output files into the `build` directory.
+You can deploy this project using:
 
-  - Go to `build` directory and manually open `index.html` to interact with the app
+```sh
+  git push main
+```
 
-## Author
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Author <a name="author"></a>
 
 👤 **Nicholas Emmanuel**
 
@@ -60,22 +97,31 @@ This web application is build with react and provides statistical insights on Co
 - Twitter: [@techieEmma](https://twitter.com/techieEmma)
 - LinkedIn: [@Nicholas Emmanuel](https://www.linkedin.com/in/techieemma/)
 
-## 🤝 Contributing
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-thanks: [issue-link](https://github.com/NickEmma/country-app-metrics/issues)
 
-## Show your support
+Feel free to check the [issues page](../../issues/).
 
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Microverse
-- [ReactJS Organization](https://reactjs.org/) for the amazing [Documentation](https://reactjs.org/docs/getting-started.html) on React.
-- [Redux Organization](https://redux.js.org/) for the amazing [Redux Essentials Tutorial](https://redux.js.org/tutorials/essentials/part-1-overview-concepts) on React.
-- [ Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for the amazing [on Behance](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>)
+If you like this project consider giving it a star ⭐️.
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for giving me the opportunity to work on this project.
+
+- LazyCoders
+- Coding Partners
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
